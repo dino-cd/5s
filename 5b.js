@@ -21,7 +21,6 @@ let canvasReal;
 let ctxReal;
 let canvas;
 let ctx;
-let thumbBigctx;
 const cwidth = 960;
 const cheight = 540;
 let pixelRatio;
