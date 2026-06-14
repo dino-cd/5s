@@ -784,6 +784,7 @@ async function loadingScreen() {
 	let resourceData = await req.json();
 
 	// 5beam
+	let svg5beamStars;
 	svg5beamStars = await createImage(resourceData['5beam/stars.svg']);
 	svg5beamPlays = await createImage(resourceData['5beam/plays.svg']);
 	svg5beamLevels = await createImage(resourceData['5beam/levels.svg']);
