@@ -43,6 +43,7 @@ let osc5, osctx5;
 const thumbs = new Array(8);
 const thumbsctx = new Array(8);
 let thumbBig;
+let thumbBigctx;
 
 let _xmouse = 0;
 let _ymouse = 0;
