@@ -42,7 +42,7 @@ let osc5, osctx5;
 // explore level thumbnails
 const thumbs = new Array(8);
 const thumbsctx = new Array(8);
-let thumbBig, thumbBigctx;
+let thumbBig;
 
 let _xmouse = 0;
 let _ymouse = 0;
