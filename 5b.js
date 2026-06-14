@@ -17,7 +17,6 @@ let i2;
 let newWindow;
 let pastedData;
 import { blockProperties, switches, charD, diaMouths, bodyPartAnimations, legFrames, charModels } from './arrayData.js';
-let osctx1, osctx2, osctx3, osctx4, osctx5;
 let canvasReal;
 let ctxReal;
 let canvas;
