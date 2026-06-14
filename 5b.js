@@ -12,11 +12,17 @@ performanceTest(()=>{
 // 		performanceTestTimes = [];
 // 	}
 // }
+let clipboardTileCandidate;
+let i2;
+let newWindow;
+let pastedData;
 import { blockProperties, switches, charD, diaMouths, bodyPartAnimations, legFrames, charModels } from './arrayData.js';
+let osctx1, osctx2, osctx3, osctx4, osctx5;
 let canvasReal;
 let ctxReal;
 let canvas;
 let ctx;
+let thumbBigctx;
 const cwidth = 960;
 const cheight = 540;
 let pixelRatio;
@@ -524,6 +530,7 @@ let recover = false;
 let recover2 = 0;
 let recoverTimer = 0;
 let HPRC2 = 0;
+let HPRC1 = 0;
 let cornerHangTimer = 0;
 let goal = 0;
 let charsAtEnd = 0;
@@ -785,6 +792,8 @@ async function loadingScreen() {
 
 	// 5beam
 	let svg5beamStars;
+	let svg5beamPlays;
+	let svg5beamLevels;
 	svg5beamStars = await createImage(resourceData['5beam/stars.svg']);
 	svg5beamPlays = await createImage(resourceData['5beam/plays.svg']);
 	svg5beamLevels = await createImage(resourceData['5beam/levels.svg']);
