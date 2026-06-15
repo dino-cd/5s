@@ -6230,6 +6230,7 @@ function setup() {
 }
 
 function draw() {
+	let x, y, charDropdownY;
 	onButton = false;
 	hoverText = '';
 	onTextBox = false;
