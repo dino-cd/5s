@@ -12,6 +12,9 @@ performanceTest(()=>{
 // 		performanceTestTimes = [];
 // 	}
 // }
+	let svg5beamStars;
+	let svg5beamPlays;
+	let svg5beamLevels;
 let clipboardTileCandidate;
 let i2;
 let newWindow;
@@ -790,9 +793,6 @@ async function loadingScreen() {
 	let resourceData = await req.json();
 
 	// 5beam
-	let svg5beamStars;
-	let svg5beamPlays;
-	let svg5beamLevels;
 	svg5beamStars = await createImage(resourceData['5beam/stars.svg']);
 	svg5beamPlays = await createImage(resourceData['5beam/plays.svg']);
 	svg5beamLevels = await createImage(resourceData['5beam/levels.svg']);
