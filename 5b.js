@@ -3064,7 +3064,7 @@ function verticalProp(i, sign, prop, x, y) {
 		return true;
 	}
 	if (prop >= 4 && prop <= 7) {
-		for (j = Math.floor((x - char[i].w) / 30); j <= Math.floor((x + char[i].w - 0.01) / 30); j++) {
+		for (let j = Math.floor((x - char[i].w) / 30); j <= Math.floor((x + char[i].w - 0.01) / 30); j++) {
 			if (!outOfRange(j, yTile)) {
 				if (blockProperties[thisLevel[yTile][j]][prop - 4] && !blockProperties[thisLevel[yTile][j]][prop]) {
 					return false;
@@ -3072,7 +3072,7 @@ function verticalProp(i, sign, prop, x, y) {
 			}
 		}
 	}
-	for (j = Math.floor((x - char[i].w) / 30); j <= Math.floor((x + char[i].w - 0.01) / 30); j++) {
+	for (let j = Math.floor((x - char[i].w) / 30); j <= Math.floor((x + char[i].w - 0.01) / 30); j++) {
 		if (!outOfRange(j, yTile)) {
 			if (blockProperties[thisLevel[yTile][j]][prop]) {
 				if (prop != 1 || !ifCarried(i) || allSolid(thisLevel[yTile][j])) {
@@ -3102,7 +3102,7 @@ function horizontalProp(i, sign, prop, x, y) {
 			}
 		}
 	}
-	for (j = Math.floor((y - char[i].h) / 30); j <= Math.floor((y - 0.01) / 30); j++) {
+	for (let j = Math.floor((y - char[i].h) / 30); j <= Math.floor((y - 0.01) / 30); j++) {
 		if (!outOfRange(xTile, j)) {
 			if (blockProperties[thisLevel[j][xTile]][prop]) {
 				return true;
