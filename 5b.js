@@ -6780,7 +6780,7 @@ function draw() {
 						char[i].heated = 0;
 					}
 					if (char[i].standingOn >= 0) {
-						j = char[i].standingOn;
+						let j = char[i].standingOn;
 						if (Math.abs(char[i].x - char[j].x) >= char[i].w + char[j].w || ifCarried(j)) {
 							fallOff(i);
 						}
